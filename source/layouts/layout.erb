@@ -6,14 +6,33 @@
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+    <!-- Viewport setup -->
+    <meta name="viewport" id="viewport"
+          content="initial-scale=1.0,user-scalable=no,maximum-scale=1">
 
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
+    <meta name="author" content="J Shamsul Bahri (@jibone)">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "JShamsul.com" %></title>
+
+    <link rel="stylesheet"
+          href="//fonts.googleapis.com/css?family=Open+Sans:400,600"
+          type="text/css">
+    <link rel="stylesheet"
+          href="//fonts.googleapis.com/css?family=Poly:400,400italic"
+          type="text/css">
+
+    <%= stylesheet_link_tag "jshamsul" %>
+    <%= javascript_include_tag  "app" %>
   </head>
 
   <body class="<%= page_classes %>">
+
+    <%= partial 'partials/header_navigation' %>
+
     <%= yield %>
+
+    <%= partial 'partials/footer_standard' %>
+
   </body>
 </html>

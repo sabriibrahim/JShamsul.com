@@ -4,6 +4,10 @@ source 'https://rubygems.org'
 
 gem "middleman", "~>3.4.0"
 
+# Blogging related plugin
+gem "middleman-blog"
+gem "middleman-blog-drafts"
+
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 

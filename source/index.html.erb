@@ -1,10 +1,85 @@
 ---
-title: Welcome to Middleman
+title: JShamsul.com
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+  <!-- Greetings container start -->
+  <div class="content-panel greetings-container">
+    <div class="page-container">
+      <div class="title">Hello Internets.</div>
+    </div>
+  </div>
+  <!-- Greatings container ends -->
+
+  <!-- Self intro container start -->
+  <div class="content-panel self-intro-container">
+    <div class="page-container">
+      <div class="content">
+        <p>
+          My name is <strong>J. Shamsul Bahri</strong>. I am a <strong>full
+          stack web developer</strong>. I make web apps for fun and profit.
+          Around the web I often go by the handle <u><em>@jibone</em></u>
+        </p>
+      </div>
+
+      <div class="aside">
+        <p>
+          <a href="http://twitter.com/jibone" class="link">
+            twitter.com/jibone
+          </a> <span class="label">Twitter</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Self intro container ends -->
+
+  <!-- More info container start -->
+  <div class="content-panel more-info-container">
+    <div class="page-container">
+      <div class="content">
+        <p>
+          I used to run <a href="http://jiboneus.com">Jiboneus</a> a webzine 
+          about music, films and arts. That website is currently inactive. Is is
+          in an <em>indefinate hiatus status</em>.
+        </p>
+        <p>
+          I am currently a <strong>Software Engineer</strong> at
+          <a href="https://grab.com">Grab</a>, working mostly with
+          <strong>Ruby on Rails</strong>
+        </p>
+      </div>
+
+      <div class="aside">
+        <p>
+          <a href="http://jiboneus.com" class="link">jiboneus.com</a>
+          <span>Webzine</span>
+        </p>
+        <p>
+          <a href="https://grab.com" class="link">grab.com</a>
+          <span>Grab</span>
+        </p>
+      </div>
+    </div>
+  </div> <!-- More info container ends -->
+
+  <!-- Blog list container start -->
+  <div class="content-panel blog-list-container">
+    <div class="page-container">
+      <div class="content">
+        <p>Recent writes</p>
+
+        <ul class="blog-list">
+          <% blog.articles.each do |article| %>
+            <li>
+              <span class="date">
+                <%= article.date.strftime('%b %e %Y') %>
+              </span> &raquo;
+              <a href="<%= article.url %>"><%= article.title %></a>
+            </li>
+          <% end %>
+        </ul>
+
+        <p>More &raquo; <a href="/archive">Archive</a></p>
+      </div>
+    </div>
+  </div><!-- Blog list container ends -->
+

@@ -32,10 +32,6 @@ a {
   padding: 10px;
 }
 
-img {
-  width: 100%;
-}
-
 code,
 pre {
   font-size: .7em;
@@ -169,6 +165,17 @@ hr {
     font-size: .8em;
     padding-bottom: 20px;
     padding-top: 20px;
+
+    img.cc-logo {
+      float: left;
+      padding-right: 5px;
+      padding-top: 3px;
+    }
+
+    a.cc-link {
+      border-bottom: 1px solid $grey-dark;
+      color: $black;
+    }
   }
 }
 

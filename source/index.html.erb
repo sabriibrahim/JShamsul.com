@@ -5,7 +5,7 @@ title: JShamsul.com
   <!-- Greetings container start -->
   <div class="content-panel greetings-container">
     <div class="page-container">
-      <div class="title">Hello Internets.</div>
+      <div class="title">Hello, Internets.</div>
     </div>
   </div>
   <!-- Greatings container ends -->
@@ -14,60 +14,37 @@ title: JShamsul.com
   <div class="content-panel self-intro-container">
     <div class="page-container">
       <div class="content">
-        <p>
-          My name is <strong>J. Shamsul Bahri</strong>. Around the web I often
-          go by the handle <u><em>@jibone</em></u>.
-        </p>
-        <p>
-          I used to run <a href="http://jiboneus.com">Jiboneus</a> a webzine 
-          about music, films and arts. That website is currently inactive. Is is
-          in an <em>indefinate hiatus status</em>.
-        </p>
-        <p>
-          I am currently a <strong>Software Engineer</strong> at
-          <a href="https://grab.com">Grab</a>, working mostly with
-          <strong>Ruby on Rails</strong>
-        </p>
+
+        <p>My name is <strong>J. Shamsul Bahri</strong>. Around the web, I often
+        go by the handle <u><em>@jibone</em></u>.</p>
+
+        <p>I am a <strong>software engineer</strong> from Malaysia, currently
+        based in Singapore. I work at <a href="https://grab.com">Grab</a>,
+        driving South East Asian forward.</p>
+
       </div>
 
       <div class="aside">
         <p>
           <a href="http://twitter.com/jibone" class="link">
             twitter.com/jibone
-          </a> <span class="label">Twitter</span>
+          </a>
+          <span>Twitter</span>
         </p>
         <p>
-          <a href="http://jiboneus.com" class="link">jiboneus.com</a>
-          <span>Webzine</span>
+          <a href="http://github.com/jibone" class="link">
+            github.com/jibone
+          </a>
+          <span>Github</span>
         </p>
         <p>
-          <a href="https://grab.com" class="link">grab.com</a>
+          <a href="https://grab.com" class="link">
+            grab.com
+          </a>
           <span>Grab</span>
         </p>
       </div>
     </div>
   </div>
   <!-- Self intro container ends -->
-
-  <!-- Blog list container start -->
-  <div class="content-panel blog-list-container">
-    <div class="page-container">
-      <div class="content">
-        <p>Recent writes</p>
-
-        <ul class="blog-list">
-          <% blog.articles.each do |article| %>
-            <li>
-              <span class="date">
-                <%= article.date.strftime('%b %e %Y') %>
-              </span> &raquo;
-              <a href="<%= article.url %>"><%= article.title %></a>
-            </li>
-          <% end %>
-        </ul>
-
-        <p>More &raquo; <a href="/archive">Archive</a></p>
-      </div>
-    </div>
-  </div><!-- Blog list container ends -->
 

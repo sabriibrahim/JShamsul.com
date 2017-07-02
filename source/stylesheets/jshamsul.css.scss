@@ -10,7 +10,6 @@
 // -- layout container -------------------------------------
 html,
 body {
-  background-color: $grey-light;
   font-family: $base-font;
   font-size: $base-font-size;
   -webkit-font-smoothing: antialiased;
@@ -97,7 +96,7 @@ pre {
 
   .aside {
     font-family: $alt-font;
-    font-size: .8em;
+    font-size: .7em;
     text-align: right;
 
     .link,
@@ -160,21 +159,22 @@ hr {
 
 .footer-container {
   .page-container {
-    background-color: $grey-light;
     font-family: $alt-font;
-    font-size: .8em;
+    font-size: .6em;
+    color: $grey-normal;
     padding-bottom: 20px;
     padding-top: 20px;
+    border-top: 1px solid $grey-lighter;
 
     img.cc-logo {
       float: left;
       padding-right: 5px;
-      padding-top: 3px;
+      padding-top: 2px;
     }
 
     a.cc-link {
       border-bottom: 1px solid $grey-dark;
-      color: $black;
+      color: $grey-normal;
     }
   }
 }

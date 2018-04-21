@@ -48,3 +48,30 @@ title: JShamsul.com
   </div>
   <!-- Self intro container ends -->
 
+  <!-- Blog listing start -->
+  <div class="content-panel blog-list-container">
+    <div class="page-container">
+      <div class="content">
+        <p>Opinions expressed here are of my own.</p>
+
+        <ul class="blog-list">
+          <% blog.articles[0...10].each do |article| %>
+            <li>
+              <span class="date"><%= article.date.strftime("%Y %b %e") %></span>
+              &raquo;
+              <a href="<%= article.url %>"><%= article.title %></a>
+            </li>
+          <% end %>
+        </ul>
+
+        <p>More &raquo; <%= link_to 'Archive', '/blog' %></p>
+      </div>
+      <div class="aside">
+        <p>
+          <%= link_to 'jshamsul.com/blog', '/blog', class: 'link' %>
+          <span>Archive</span>
+        </p>
+      </div>
+    </div>
+  </div><!-- Blog listing ends -->
+

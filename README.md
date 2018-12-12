@@ -3,7 +3,7 @@
 My personal website at [jshamsul.com](https://jshamsul.com)
 
 * Site generated via [middleman](https://middlemanapp.com)
-* Hosted on [Netlify](https://netlify)
+* Hosted on [Netlify](https://netlify.com)
 
 ## Local Development
 

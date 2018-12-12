@@ -1,9 +1,9 @@
 # JShamsul.com
 
-My personal website at (jshamsul.com)[https://jshamsul.com]
+My personal website at [jshamsul.com](https://jshamsul.com)
 
-* Site generated via (middleman)[https://middlemanapp.com]
-* Hosted on (Netlify)[https://netlify]
+* Site generated via [middleman](https://middlemanapp.com)
+* Hosted on [Netlify](https://netlify)
 
 ## Local Development
 
